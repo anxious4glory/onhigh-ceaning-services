@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+    @apply rounded-full py-2 px-5 uppercase text-xs md:text-sm lg:text-sm font-bold cursor-pointer tracking-wider;
+}
+
+.sitemap{ 
+    @apply hover:text-gray-200 hover:transition ease-in-out duration-500;
+}
+
+.form {
+  @apply bg-gray-100 focus:ring-2 border-2 focus:border-none focus:ring-gray-500 block border-l-0 border-r-0 border-t-0 cursor-pointer w-72
+}
+
+.bgImage {
+    background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785976/On-High/10_ingcog.png"); /* The image used */
+  }
+
+#underline {
+  height: 0.25rem;
+  width: 4rem;
+  background: #009B81;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project_img_1 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785978/On-High/1_tdrtru.jpg");
+}
+
+.project_img_2 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785978/On-High/2_mge83f.jpg");
+}
+
+.project_img_3 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785983/On-High/3_e4ykkk.jpg");
+}
+
+.project_img_4 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785982/On-High/4_sbpudt.jpg");
+}
+
+.project_img_5 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785981/On-High/5_cu6ssk.jpg");
+}
+
+.project_img_6 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785983/On-High/6_qtrwii.jpg");
+}
+
+.project_img_7 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785976/On-High/7_bdgbv6.jpg");
+}
+
+.project_img_8 {
+  background-image: url("https://res.cloudinary.com/mastercraft/image/upload/v1639785977/On-High/8_k9cogb.jpg");
+}
+
+.animate {
+  overflow: hidden;
+}
+
+.animate span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.hero {
+  height: 550px !important;
+}
+
+.about {
+  overflow: hidden;
+}
+
+.about-us {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+.form {
+  overflow: hidden;
+}
+
+.form:focus {
+  border: 2px solid grey !important;
+}
+
+label {
+  border-bottom: 0px;
+}
+
+.contact_us_header {
+  overflow: hidden;
+}
+.formBtn {
+  overflow: hidden;
+}
+
+.aboutNextPage {
+  overflow: hidden;
+}
+
+.box {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.box1 {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.projectImg {
+  overflow: hidden;
+}
+
+.serviceBox {
+  overflow: hidden;
+}
+
+.project:hover {
+  transition-timing-function: ease-in-out !important;
+  transition: 1s;
+  transform: scale(1.3)!important;
+}
