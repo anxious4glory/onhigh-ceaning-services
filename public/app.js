@@ -5,44 +5,44 @@ document.getElementById('dynamicYear').innerHTML = year;
 
 
 // contact form function
-const contactForm = document.querySelector('.contact_form');
-let name = document.getElementById('name');
-let email = document.getElementById('email');
-let subject = document.getElementById('subject');
-let message = document.getElementById('message');
+// const contactForm = document.querySelector('.contact_form');
+// let name = document.getElementById('name');
+// let email = document.getElementById('email');
+// let subject = document.getElementById('subject');
+// let message = document.getElementById('message');
 
 // prevents page from default refresh when submit button is clicked in contact form
-contactForm.addEventListener('submit', (e)=> {
-        e.preventDefault();
+// contactForm.addEventListener('submit', (e)=> {
+//         e.preventDefault();
         
-        let formInputData = {
-            name: name.value,
-            email: email.value,
-            subject: subject.value,
-            message: message.value
-        }
+//         let formInputData = {
+//             name: name.value,
+//             email: email.value,
+//             subject: subject.value,
+//             message: message.value
+//         }
 
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', '/');
-        xhr.setRequestHeader('content-type', 'application/json');
-        xhr.onload = function () {
-            console.log(xhr.responseText);
-            if (xhr.responseText == 'success') {
+//         let xhr = new XMLHttpRequest();
+//         xhr.open('POST', '/');
+//         xhr.setRequestHeader('content-type', 'application/json');
+//         xhr.onload = function () {
+//             console.log(xhr.responseText);
+//             if (xhr.responseText == 'success') {
                 
-                document.getElementById("feedback").innerHTML = "Email Sent Successfully!";
+//                 document.getElementById("feedback").innerHTML = "Email Sent Successfully!";
                   
-                name.value = '';
-                email.value = '';
-                subject.value = '';
-                message.value = '';
-            } else{
-                document.getElementById("feedback2").innerHTML = "Error Sending Email Try Again!";
-            }
-        }
+//                 name.value = '';
+//                 email.value = '';
+//                 subject.value = '';
+//                 message.value = '';
+//             } else{
+//                 document.getElementById("feedback2").innerHTML = "Error Sending Email Try Again!";
+//             }
+//         }
 
-        xhr.send(JSON.stringify(formInputData));
+//         xhr.send(JSON.stringify(formInputData));
 
-});
+// });
 
 
 
