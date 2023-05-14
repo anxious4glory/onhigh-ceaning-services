@@ -2032,3 +2032,7 @@ label {
     line-height: 1.25rem;
   }
 }
+
+.sub-footer {
+  height: auto;
+}
